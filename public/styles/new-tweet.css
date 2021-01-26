@@ -1,0 +1,41 @@
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.submit-tweet {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Bungee", sans-serif;
+}
+
+.compose-tweet {
+  display: none;
+}
+
+label {
+  font-weight: 700;
+}
+
+#tweet-text {
+  border: 0;
+  outline: 0;
+  border-bottom: 5px solid #545149;
+  margin-bottom: 10px;
+  resize: none;
+  background-color: transparent;
+}
+
+button {
+  background-color: #97B9BA;
+  color: white;
+  border: none;
+  padding: 5px 15px;
+}
+
+button:hover {
+  background-color: white;
+  color: #545149;
+  border: #545149;
+  padding: 5px 15px;
+}
