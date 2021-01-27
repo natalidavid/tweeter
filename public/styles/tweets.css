@@ -36,7 +36,7 @@ article.tweets footer {
   gap: 8px;
 }
 
-p.tweet-status {
+.tweet-status {
   font-size: 21px;
   font-weight: 600;
   padding: 1vh;
@@ -45,13 +45,6 @@ p.tweet-status {
 i {
   color: #97B9BA;
 }
-
-/* article.tweets img {
-  background-color: white;
-  border-radius: 50%;
-  padding: 10px;
-} */
-
 
 article.tweets:hover {
   box-shadow: 10px 10px #c0c3c5;

@@ -13,12 +13,13 @@ nav {
 }
 
 nav span {
-  font-family: "Bungee", sans-serif;
-  font-size: 30px;
+  font-family: "Bungee", cursive;
+  font-size: 34px;
 }
 
-nav p {
-  margin-bottom: 2px;
+span.write {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 20px;
 }
 
 div.right {
@@ -27,7 +28,6 @@ div.right {
   align-items: center;
   gap: 2px
 }
-
 
 i.arrow {
   color: red;
