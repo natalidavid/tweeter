@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
   <link rel="stylesheet" href="/styles/header.css" type="text/css" />
   <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/tweets.css" type="text/css" />
 
   <!-- External JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -35,12 +36,12 @@
     <span>tweeter</span>
     <div class="right">
       <p><b>Write</b> a new tweet</p>
-      <i class="fas fa-angle-double-down"></i>
+      <i class="arrow fas fa-angle-double-down"></i>
     </div>
   </nav>
 
 
-  <header>
+  <header class="header">
     <div class="icon">
       <img src="/images/profile-hex.png">
     </div>
@@ -65,21 +66,34 @@
           <button type="submit">Tweet</button>
           <output name="counter" class="counter" for="tweet-text">140</output>
         </div>
-
       </form>
-
-      <article>
-
-        
-      </article>
-
-
     </section>
 
+    <section class="tweet-feed">
+      <!-- <h2 class="all-tweets">Tweet Feed</h2> -->
+      <article class="tweets">
+        <header>
+          <div class="image-username">
+            <img src="/images/user-img1.png">
+            <span class="author">Newton</span>
+          </div>
+          <span class="handle">@SirIsaac</span>
+        </header>
+        <p class="tweet-status">If I have seen further it is by standing on the shoulders of Giants</p>
+        <footer>
+          <span>10 days ago</span>
+          <div class="feed-icons">
+            <i class="fas fa-flag"></i>
+            <i class="fas fa-retweet"></i>
+            <i class="fas fa-heart"></i>
+          </div>
+        </footer>
+      </article>
+    </section>
+
+
+
   </main>
-
-
-
 </body>
 
 </html>
