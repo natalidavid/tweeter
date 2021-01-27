@@ -1,0 +1,40 @@
+article.tweets {
+  border: solid 4px;
+  margin: 10vh 0;
+  padding: 3vh 3vw;
+}
+
+article.tweets header {
+  margin-top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image-username {
+  display: flex;
+  align-items: center;
+}
+
+article.tweets footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: solid 4px;
+  padding: 1vh;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.feed-icons {
+  color: aqua;
+}
+
+p.tweet-status {
+  font-size: 21px;
+  font-weight: 600;
+  padding: 1vh;
+}
+
+i {
+  color: #97B9BA;
+}
