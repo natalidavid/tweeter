@@ -22,9 +22,10 @@ div.right {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 2px
 }
 
 
-i {
+i.arrow {
   color: red;
 }

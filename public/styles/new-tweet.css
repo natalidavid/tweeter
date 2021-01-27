@@ -1,3 +1,7 @@
+section.new-tweet {
+  padding: 0 1vw;
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -21,7 +25,7 @@ label {
   border: 0;
   outline: 0;
   height: auto;
-  border-bottom: 5px solid #545149;
+  border-bottom: 4px solid #545149;
   margin-bottom: 10px;
   resize: none;
   background-color: transparent;
