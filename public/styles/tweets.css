@@ -14,6 +14,12 @@ article.tweets header {
 .image-username {
   display: flex;
   align-items: center;
+  gap: 10px;
+}
+
+span.handle {
+  font-weight: 600;
+  color: transparent;
 }
 
 article.tweets footer {
@@ -26,7 +32,8 @@ article.tweets footer {
 }
 
 .feed-icons {
-  color: aqua;
+  display: flex;
+  gap: 8px;
 }
 
 p.tweet-status {
@@ -37,4 +44,19 @@ p.tweet-status {
 
 i {
   color: #97B9BA;
+}
+
+/* article.tweets img {
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px;
+} */
+
+
+article.tweets:hover {
+  box-shadow: 10px 10px #c0c3c5;
+}
+
+article.tweets:hover .handle {
+  color: #c0c3c5;
 }
