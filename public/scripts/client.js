@@ -22,7 +22,7 @@ $(document).ready(function () {
 
     let $tweet = /* Your code for creating the tweet element */
       // ...
-      `<article class="tweet">
+      `<article class="tweet" id="tweetz">
           <header>
             <div class="image-username">
               <img src="${tweet.user.avatars}">
@@ -72,15 +72,12 @@ $(document).ready(function () {
 
       let url = '/tweets/';
 
-      // refactored POST method in AJAX
       $.ajax({
         url: url,
         method: "POST",
-        data: $(this).serialize(),
-        success: function (data) {
-            location.reload();
-            // if (data.success){ $('.tweet').replace('.tweet'); } 
-        }
-      });
+        data: $(this).serialize()
+      })
+        .then(loadTweets());
     }
-  })})
+  });
+});
