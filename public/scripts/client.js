@@ -56,7 +56,7 @@ $(document).ready(function () {
 
     $.ajax('/tweets', {
       dataType: 'json',
-      method: 'GET',
+      method: 'GET'
     })
       .then((result) => {
         renderTweets(result);
@@ -73,10 +73,12 @@ $(document).ready(function () {
     const data = $('#tweet-text').val();
 
     if (data.trim() === '') {
-      alert("This field cannot be empty");
+      $("#error").slideDown();
+      return;
     } else if (data.length > 140) {
-      alert("Character limit is 140");
-    } else {
+      $("#error").slideDown();
+      return;
+    }
 
       let url = '/tweets/';
 
@@ -86,6 +88,8 @@ $(document).ready(function () {
         data: $(this).serialize()
       })
         .then(loadTweets());
-    }
+        $(this).children('.submit-tweet').children('.counter').val('140');
+        $('#tweet-text').val('');
+  
   });
 });
