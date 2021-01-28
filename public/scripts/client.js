@@ -48,7 +48,7 @@ $(document).ready(function () {
 
     $.ajax('/tweets', {
       dataType: 'json',
-      method: 'GET'
+      method: 'GET',
     })
       .then((result) => {
         renderTweets(result);
@@ -63,17 +63,24 @@ $(document).ready(function () {
     event.preventDefault();
 
     const data = $('#tweet-text').val();
- 
+
     if (data.trim() === '') {
       alert("This field cannot be empty");
     } else if (data.length > 140) {
-        alert("Character limit is 140");
+      alert("Character limit is 140");
     } else {
 
-    let url = '/tweets/';
+      let url = '/tweets/';
 
-    // refactored POST method in AJAX
-    $.post(url, $(this).serialize());
+      // refactored POST method in AJAX
+      $.ajax({
+        url: url,
+        method: "POST",
+        data: $(this).serialize(),
+        success: function (data) {
+            location.reload();
+            // if (data.success){ $('.tweet').replace('.tweet'); } 
+        }
+      });
     }
-  });
-});
+  })})
