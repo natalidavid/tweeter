@@ -74,3 +74,16 @@ $(document).ready(function () {
   };
 
   renderTweets(tweetData);
+
+  $("form").on("submit", function (event) {
+    event.preventDefault();
+
+    let url = '/tweets/';
+
+    $.ajax({
+      url: url,
+      method: "POST",
+      data: $(this).serialize();
+    });
+  });
+});
