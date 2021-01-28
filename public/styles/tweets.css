@@ -1,10 +1,10 @@
-article.tweets {
+article.tweet {
   border: solid 4px;
   margin: 10vh 0;
   padding: 3vh 3vw;
 }
 
-article.tweets header {
+article.tweet header {
   margin-top: 0;
   display: flex;
   justify-content: space-between;
@@ -22,7 +22,7 @@ span.handle {
   color: transparent;
 }
 
-article.tweets footer {
+article.tweet footer {
   display: flex;
   justify-content: space-between;
   border-top: solid 4px;
@@ -46,10 +46,10 @@ i {
   color: #97B9BA;
 }
 
-article.tweets:hover {
+article.tweet:hover {
   box-shadow: 10px 10px #c0c3c5;
 }
 
-article.tweets:hover .handle {
+article.tweet:hover .handle {
   color: #c0c3c5;
 }
