@@ -80,10 +80,14 @@ $(document).ready(function () {
 
     let url = '/tweets/';
 
-    $.ajax({
-      url: url,
-      method: "POST",
-      data: $(this).serialize();
-    });
+    // $.ajax({
+    //   url: url,
+    //   method: "POST",
+    //   data: $(this).serialize();
+    // });
+
+    // refactored POST method in AJAX
+    $.post(url, $(this).serialize())
+
   });
 });
