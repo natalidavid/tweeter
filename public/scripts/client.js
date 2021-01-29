@@ -61,8 +61,6 @@ $(document).ready(function () {
   };
   loadTweets();
 
-
-
   $("form").on("submit", function (event) {
     event.preventDefault();
 
@@ -85,7 +83,6 @@ $(document).ready(function () {
       .then(loadTweets());
     $(this).children('.submit-tweet').children('.counter').val('140');
     $('#tweet-text').val('');
-    
 
   });
 });

@@ -20,6 +20,8 @@ body {
   background-color: #EDEFF0;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 24px;
+  display: flex;
+  flex-wrap: wrap;
 }
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
@@ -33,15 +35,3 @@ main {
 
 /* Tablet styles */
 
-
-@media only screen and (min-width: 768px) {
-  span.write {
-    font-size: 180px;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  span.write {
-    font-size: 180px;
-  }
-}

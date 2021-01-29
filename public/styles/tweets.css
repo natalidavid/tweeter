@@ -41,6 +41,7 @@ article.tweet footer {
   font-size: 21px;
   font-weight: 600;
   padding: 1vh;
+  word-break: break-all;
 }
 
 article.tweet:hover {
