@@ -16,7 +16,11 @@ Tweeter is a simple, single-page Twitter clone.
 - Body Parser
 - md5
 
+Desktop view:
 ![tweeter desktop](https://github.com/natalidavid/tweeter/blob/master/docs/tweeter-desktop-size.png)
+Tweeter status on hover:
 ![tweeter status](https://github.com/natalidavid/tweeter/blob/master/docs/tweeter-status.png)
+Tablet: 
 ![tweeter tablet](https://github.com/natalidavid/tweeter/blob/master/docs/tweeter-tablet.png)
+Tweeter on mobile:
 ![tweeter mobile](https://github.com/natalidavid/tweeter/blob/master/docs/tweeter-mobile.png)
