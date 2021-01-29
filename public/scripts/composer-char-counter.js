@@ -10,6 +10,7 @@ $(document).ready(function() {
     } else {
       counter.removeClass("add-color");
       $("#error").slideUp();
+      $("#empty").slideUp();
     }
   });
 });
