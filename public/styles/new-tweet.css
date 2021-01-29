@@ -36,6 +36,7 @@ button {
   color: white;
   border: none;
   padding: 5px 15px;
+  outline: none;
 }
 
 button:hover {
@@ -47,3 +48,16 @@ button:hover {
 .add-color {
   color: red;
 }
+
+#error {
+  background-color: #EADAD0;
+  display: none;
+  padding: 10px;
+}
+
+#empty {
+  background-color: #EADAD0;
+  display: none;
+  padding: 10px;
+}
+

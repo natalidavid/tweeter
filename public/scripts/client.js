@@ -4,25 +4,24 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
-
 $(document).ready(function () {
-
+ 
   const renderTweets = function (tweets) {
+    $('#tweets').empty()
     // loops through tweets
     // calls createTweetElement for each tweet
     // takes return value and appends it to the tweets container
     for (let tweet of tweets) {
       const element = createTweetElement(tweet);
       $('#tweets').prepend(element);
-
     }
   };
 
-  const escape =  function(str) {
+  const escape = function (str) {
     let div = document.createElement('div');
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
-  }
+  };
 
   const createTweetElement = function (tweet) {
 
@@ -46,9 +45,6 @@ $(document).ready(function () {
             </div>
           </footer>
         </article>`;
-
-      
-
     return $tweet;
   };
 
@@ -60,9 +56,9 @@ $(document).ready(function () {
     })
       .then((result) => {
         renderTweets(result);
+        return;
       });
   };
-
   loadTweets();
 
 
@@ -73,23 +69,23 @@ $(document).ready(function () {
     const data = $('#tweet-text').val();
 
     if (data.trim() === '') {
-      $("#error").slideDown();
+      $("#empty").slideDown();
       return;
     } else if (data.length > 140) {
       $("#error").slideDown();
       return;
     }
+    let url = '/tweets/';
 
-      let url = '/tweets/';
+    $.ajax({
+      url: url,
+      method: "POST",
+      data: $(this).serialize()
+    })
+      .then(loadTweets());
+    $(this).children('.submit-tweet').children('.counter').val('140');
+    $('#tweet-text').val('');
+    
 
-      $.ajax({
-        url: url,
-        method: "POST",
-        data: $(this).serialize()
-      })
-        .then(loadTweets());
-        $(this).children('.submit-tweet').children('.counter').val('140');
-        $('#tweet-text').val('');
-  
   });
 });

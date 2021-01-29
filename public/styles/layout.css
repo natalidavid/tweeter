@@ -8,6 +8,7 @@ html {
 }
 *, *:before, *:after {
   box-sizing: inherit;
+  scroll-behavior: smooth;
 }
 
 /*
@@ -28,4 +29,19 @@ main {
   width: 90%;
   margin: auto;
   padding: 5vh 0;
+}
+
+/* Tablet styles */
+
+
+@media only screen and (min-width: 768px) {
+  span.write {
+    font-size: 180px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  span.write {
+    font-size: 180px;
+  }
 }

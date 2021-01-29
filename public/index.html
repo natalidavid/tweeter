@@ -4,6 +4,7 @@
 <head>
   <!-- Meta Information -->
   <title>Tweeter - Home Page</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
 
   <!-- External CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -36,7 +37,7 @@
     <span>tweeter</span>
     <div class="right">
       <span class="write"><b>Write</b> a new tweet</span>
-      <i class="arrow fas fa-angle-double-down"></i>
+      <a href="#tweet-text"><i class="arrow fas fa-angle-double-down"></i></a>
     </div>
   </nav>
 
@@ -57,6 +58,14 @@
     <section class="new-tweet">
       <h2 class="compose-tweet">Compose Tweet</h2>
 
+      <figure id="error">
+        <figcaption>You're over your character limit.</figcaption>
+      </figure>
+
+      <figure id="empty">
+        <figcaption>Make sure your tweet is not empty.</figcaption>
+      </figure>
+
       <form method="POST" action="/tweets/">
 
         <label for="tweet-text">What are you humming about?</label>
@@ -67,6 +76,7 @@
           <output name="counter" class="counter" for="tweet-text">140</output>
         </div>
       </form>
+
     </section>
     <section class="tweet-feed" id="tweets">
     </section>

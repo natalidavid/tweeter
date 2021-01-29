@@ -9,6 +9,7 @@ $(document).ready(function() {
       counter.addClass("add-color");
     } else {
       counter.removeClass("add-color");
+      $("#error").slideUp();
     }
   });
 });

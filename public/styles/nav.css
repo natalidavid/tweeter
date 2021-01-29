@@ -1,5 +1,5 @@
 nav {
-  height: 100px;
+  height: 110px;
   width: 100vw;
   background-color: #97B9BA;
   color: white;
@@ -14,12 +14,14 @@ nav {
 
 nav span {
   font-family: "Bungee", cursive;
-  font-size: 34px;
+  font-size: 30px;
 }
 
 span.write {
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 20px;
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
 }
 
 div.right {

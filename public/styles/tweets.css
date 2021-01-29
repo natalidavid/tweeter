@@ -17,7 +17,7 @@ article.tweet header {
   gap: 10px;
 }
 
-span.handle {
+.handle {
   font-weight: 600;
   color: transparent;
 }
@@ -34,6 +34,7 @@ article.tweet footer {
 .feed-icons {
   display: flex;
   gap: 8px;
+  color: transparent;
 }
 
 .tweet-status {
@@ -42,14 +43,14 @@ article.tweet footer {
   padding: 1vh;
 }
 
-i {
-  color: #97B9BA;
-}
-
 article.tweet:hover {
   box-shadow: 10px 10px #c0c3c5;
 }
 
 article.tweet:hover .handle {
+  color: #c0c3c5;
+}
+
+article.tweet:hover .feed-icons {
   color: #c0c3c5;
 }
